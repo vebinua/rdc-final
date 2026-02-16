@@ -12,6 +12,40 @@ interface ContactFormData {
   message: string;
 }
 
+async function getM365AccessToken(): Promise<string> {
+  const tenantId = Deno.env.get("MICROSOFT_TENANT_ID");
+  const clientId = Deno.env.get("MICROSOFT_CLIENT_ID");
+  const clientSecret = Deno.env.get("MICROSOFT_CLIENT_SECRET");
+
+  if (!tenantId || !clientId || !clientSecret) {
+    throw new Error("Microsoft 365 credentials not configured");
+  }
+
+  const tokenEndpoint = `https://login.microsoftonline.com/${tenantId}/oauth2/v2.0/token`;
+
+  const response = await fetch(tokenEndpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: new URLSearchParams({
+      client_id: clientId,
+      client_secret: clientSecret,
+      scope: "https://graph.microsoft.com/.default",
+      grant_type: "client_credentials",
+    }),
+  });
+
+  if (!response.ok) {
+    const error = await response.text();
+    console.error("Failed to get access token:", error);
+    throw new Error("Failed to authenticate with Microsoft 365");
+  }
+
+  const data = await response.json();
+  return data.access_token;
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
     return new Response(null, {
@@ -36,10 +70,10 @@ Deno.serve(async (req: Request) => {
       );
     }
 
-    const resendApiKey = Deno.env.get("RESEND_API_KEY");
+    const senderEmail = Deno.env.get("MICROSOFT_USER_EMAIL");
 
-    if (!resendApiKey) {
-      console.error("RESEND_API_KEY is not configured");
+    if (!senderEmail) {
+      console.error("MICROSOFT_USER_EMAIL is not configured");
       return new Response(
         JSON.stringify({ error: "Email service not configured" }),
         {
@@ -96,24 +130,49 @@ Deno.serve(async (req: Request) => {
 </html>
     `.trim();
 
-    const resendResponse = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${resendApiKey}`,
-      },
-      body: JSON.stringify({
-        from: "RDC Corporate Website <noreply@rdccorporate.com>",
-        to: ["contact@rdccorporate.com"],
-        reply_to: email,
-        subject: "New Inquiry from RDC Corporate Website",
-        html: emailBody,
-      }),
-    });
+    const accessToken = await getM365AccessToken();
 
-    if (!resendResponse.ok) {
-      const error = await resendResponse.text();
-      console.error("Resend API error:", error);
+    const emailPayload = {
+      message: {
+        subject: "New Inquiry from RDC Corporate Website",
+        body: {
+          contentType: "HTML",
+          content: emailBody,
+        },
+        toRecipients: [
+          {
+            emailAddress: {
+              address: "contact@rdccorporate.com",
+            },
+          },
+        ],
+        replyTo: [
+          {
+            emailAddress: {
+              address: email,
+              name: name,
+            },
+          },
+        ],
+      },
+      saveToSentItems: true,
+    };
+
+    const graphResponse = await fetch(
+      `https://graph.microsoft.com/v1.0/users/${senderEmail}/sendMail`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${accessToken}`,
+        },
+        body: JSON.stringify(emailPayload),
+      }
+    );
+
+    if (!graphResponse.ok) {
+      const error = await graphResponse.text();
+      console.error("Microsoft Graph API error:", error);
       return new Response(
         JSON.stringify({ error: "Failed to send email" }),
         {
@@ -126,13 +185,10 @@ Deno.serve(async (req: Request) => {
       );
     }
 
-    const data = await resendResponse.json();
-
     return new Response(
       JSON.stringify({
         success: true,
         message: "Email sent successfully",
-        id: data.id
       }),
       {
         status: 200,
