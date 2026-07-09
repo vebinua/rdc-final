@@ -34,11 +34,10 @@ const FormationOfForeignEntities = () => {
         structuredData={structuredData}
       />
       
-      {/* Header Banner Section */}
-      <header role="banner" className="relative">
+      {/* Hero Section */}
+      <section aria-label="Formation of Foreign Company hero" className="relative">
         {/* Background Image Container */}
-        <div 
-          id="header-background"
+        <div
           className="header-background absolute inset-0"
           style={{
             backgroundImage: 'url(/marinabay_1920x1080.png)',
@@ -54,11 +53,9 @@ const FormationOfForeignEntities = () => {
 
         {/* Gradient Overlay — Brand Colors (No Blur) */}
         <div 
-          id="header-overlay"
           className="header-overlay absolute inset-0 z-10 bg-gradient-to-br from-[#5680E9]/20 via-[#84CEEB]/10 to-[#8860D0]/20"
         >
-          <div 
-            id="header-radial-overlay"
+          <div
             className="header-radial-overlay absolute inset-0 bg-radial-gradient from-transparent via-black/5 to-transparent"
           />
         </div>
@@ -71,19 +68,15 @@ const FormationOfForeignEntities = () => {
 
         {/* Main Hero Section */}
         <section
-          id="hero-section"
           className="hero-section relative min-h-[60vh] flex items-center justify-center"
         >
-          <div 
-            id="hero-content-container"
+          <div
             className="hero-content-container relative z-20 text-center text-white px-6 max-w-7xl mx-auto"
           >
-            <div 
-              id="hero-content-wrapper"
+            <div
               className="hero-content-wrapper py-6 md:py-8 font-sans mt-16 md:mt-20 mb-8 md:mb-12"
             >
-              <h1 
-                id="main-heading"
+              <h1
                 className="main-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-white drop-shadow-md"
                 style={{
                   textShadow: '0 2px 8px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3)'
@@ -92,12 +85,10 @@ const FormationOfForeignEntities = () => {
                 Formation of Foreign Company
               </h1>
               
-              <div 
-                id="description-section"
+              <div
                 className="description-section max-w-4xl mx-auto mb-6 sm:mb-8"
               >
-                <p 
-                  id="main-description"
+                <p
                   className="text-sm sm:text-base md:text-lg lg:text-xl text-white/95 leading-relaxed font-medium"
                   style={{
                     textShadow: '0 1px 4px rgba(0,0,0,0.3)'
@@ -109,7 +100,7 @@ const FormationOfForeignEntities = () => {
             </div>
           </div>
         </section>
-      </header>
+      </section>
 
       {/* Visual Separation Element */}
       <div className="relative z-20">

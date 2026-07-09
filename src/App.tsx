@@ -56,7 +56,7 @@ function AppContent() {
       </div>
       <SkipLink />
       <Header />
-      <main id="main-content" role="main" tabIndex={-1} className="focus:outline-none">
+      <main id="main-content" tabIndex={-1} className="focus:outline-none">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/formation-singapore-entities" element={<FormationOfSingaporeEntities />} />

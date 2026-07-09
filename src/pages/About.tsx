@@ -58,10 +58,9 @@ const About: React.FC = () => {
         structuredData={structuredData}
       />
 
-      <header role="banner" className="relative overflow-hidden">
+      <section aria-label="About RDC Corporate hero" className="relative overflow-hidden">
         {/* Background Image Container */}
         <div
-          id="header-background"
           className="header-background absolute inset-0 z-0"
           style={{
             backgroundImage: 'url(/marinabay_1920x1080.png)',
@@ -76,11 +75,9 @@ const About: React.FC = () => {
 
         {/* Gradient Overlay — Brand Colors (No Blur) */}
         <div
-          id="header-overlay"
           className="header-overlay absolute inset-0 z-10 bg-gradient-to-br from-[#5680E9]/20 via-[#84CEEB]/10 to-[#8860D0]/20"
         >
           <div
-            id="header-radial-overlay"
             className="header-radial-overlay absolute inset-0 bg-radial-gradient from-transparent via-black/5 to-transparent"
           />
         </div>
@@ -93,11 +90,9 @@ const About: React.FC = () => {
 
         {/* Main Hero Section */}
         <section
-          id="hero-section"
           className="hero-section relative min-h-[60vh] flex items-center justify-center"
         >
           <div
-            id="hero-content-container"
             className="hero-content-container relative z-20 text-center text-white px-6 max-w-7xl mx-auto"
           >
             <div className="inline-block mb-6 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
@@ -117,7 +112,7 @@ const About: React.FC = () => {
             </p>
           </div>
         </section>
-      </header>
+      </section>
 
       <section className="relative py-20 md:py-28">
         <div className="container mx-auto px-6">

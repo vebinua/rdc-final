@@ -18,11 +18,10 @@ const PrivacyPolicy: React.FC = () => {
         structuredData={structuredData}
       />
       
-      {/* Header Banner Section */}
-      <header role="banner" className="relative">
+      {/* Hero Section */}
+      <section aria-label="Privacy Policy hero" className="relative">
         {/* Background Image Container */}
         <div
-          id="header-background"
           className="header-background absolute inset-0"
           style={{
             backgroundImage: 'url(/marinabay_1920x1080.png)',
@@ -38,11 +37,9 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Gradient Overlay — Brand Colors */}
         <div
-          id="header-overlay"
           className="header-overlay absolute inset-0 z-10 bg-gradient-to-br from-[#5680E9]/20 via-[#84CEEB]/10 to-[#8860D0]/20"
         >
           <div
-            id="header-radial-overlay"
             className="header-radial-overlay absolute inset-0 bg-radial-gradient from-transparent via-black/5 to-transparent"
           />
         </div>
@@ -59,15 +56,12 @@ const PrivacyPolicy: React.FC = () => {
           className="hero-section relative min-h-[60vh] flex items-center justify-center"
         >
           <div
-            id="hero-content-container"
             className="hero-content-container relative z-20 text-center text-white px-6 max-w-7xl mx-auto"
           >
             <div
-              id="hero-content-wrapper"
               className="hero-content-wrapper py-6 md:py-8 font-sans mt-16 md:mt-20 mb-8 md:mb-12"
             >
               <h1
-                id="main-heading"
                 className="main-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-white drop-shadow-md"
                 style={{
                   textShadow: '0 2px 8px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3)'
@@ -93,7 +87,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
           </div>
         </section>
-      </header>
+      </section>
 
       {/* Visual Separation Element */}
       <div className="relative z-20">
@@ -117,7 +111,7 @@ const PrivacyPolicy: React.FC = () => {
                       <div className="w-3 h-3 bg-[#5680E9] rounded-full animate-pulse"></div>
                       <div className="w-12 h-1 bg-gradient-to-r from-[#84CEEB] to-[#5680E9] rounded-full"></div>
                     </div>
-                    <h1 className="text-3xl md:text-4xl font-bold text-[#5680E9] font-sans mb-4">PRIVACY POLICY</h1>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#5680E9] font-sans mb-4">PRIVACY POLICY</h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-[#5680E9] to-[#84CEEB] mx-auto rounded-full"></div>
                   </div>
                   
@@ -172,10 +166,10 @@ const PrivacyPolicy: React.FC = () => {
                           <p className="text-base leading-relaxed mb-4 font-body text-gray-700">
                             When you use the Services, RDC Group may collect, amongst others, the following information:
                           </p>
-                          <div className="space-y-2">
+                          <ul className="space-y-2 list-none">
                             {[
                               'Full Name',
-                              'Residential Address', 
+                              'Residential Address',
                               'Date of Birth',
                               'NRIC / Passport number',
                               'Contact Phone numbers and Email addresses',
@@ -183,12 +177,12 @@ const PrivacyPolicy: React.FC = () => {
                               'Copy of NRIC / Passport',
                               'Proof of Address documents'
                             ].map((item, index) => (
-                              <div key={index} className="flex items-start gap-3">
-                                <div className="w-2 h-2 bg-[#5680E9] rounded-full mt-2 flex-shrink-0"></div>
+                              <li key={index} className="flex items-start gap-3">
+                                <div aria-hidden="true" className="w-2 h-2 bg-[#5680E9] rounded-full mt-2 flex-shrink-0"></div>
                                 <span className="text-sm font-body text-gray-700">{item}</span>
-                              </div>
+                              </li>
                             ))}
-                          </div>
+                          </ul>
                         </div>
 
                         {/* Subsection 2.2 */}
@@ -197,21 +191,21 @@ const PrivacyPolicy: React.FC = () => {
                           <p className="text-base leading-relaxed mb-4 font-body text-gray-700">
                             The personal data is collected, used, disclosed and/or processed for the following purposes:
                           </p>
-                          <div className="space-y-3">
+                          <ul className="space-y-3 list-none">
                             {[
                               'Provide and deliver the Services you have requested',
                               'Operate our internal operations, systems, products, and services',
                               'Provide customer service related to our products and services',
                               'Facilitating any proposed or confirmed merger, acquisition or business asset transaction involving any part of the Group and/or its related corporations, or corporate restructuring process'
                             ].map((item, index) => (
-                              <div key={index} className="flex items-start gap-3">
-                                <div className="w-6 h-6 bg-gradient-to-br from-[#8860D0] to-[#5680E9] rounded-full flex items-center justify-center text-white text-xs font-bold mt-0.5 flex-shrink-0">
+                              <li key={index} className="flex items-start gap-3">
+                                <div aria-hidden="true" className="w-6 h-6 bg-gradient-to-br from-[#8860D0] to-[#5680E9] rounded-full flex items-center justify-center text-white text-xs font-bold mt-0.5 flex-shrink-0">
                                   {index + 1}
                                 </div>
                                 <span className="text-sm font-body text-gray-700 leading-relaxed">{item}</span>
-                              </div>
+                              </li>
                             ))}
-                          </div>
+                          </ul>
                         </div>
 
                         {/* Subsection 2.3 */}
@@ -220,19 +214,19 @@ const PrivacyPolicy: React.FC = () => {
                           <p className="text-base leading-relaxed mb-4 font-body text-gray-700">
                             RDC Group may disclose personal data about you to the following third parties for any of the purposes described in this Privacy Policy:
                           </p>
-                          <div className="space-y-3">
+                          <ul className="space-y-3 list-none">
                             {[
                               'Any person to whom you authorise us to disclose your personal data',
                               'Law enforcement agencies, relevant government ministries, regulators, statutory boards or authorities in compliance with any laws, rules, guidelines and regulations or schemes imposed by any governmental authority',
                               'Our professional advisors, who may include lawyers, auditors, accountants, or other consultants',
                               'Service providers we hire to perform services on our behalf, including, but not limited to the generation of invoices, managing our information technology systems etc. These service providers do not have the right to use your personal data for their purposes. If you have consented, RDC Group may share your personal data with the Group\'s service providers so that these service providers can contact you on our behalf'
                             ].map((item, index) => (
-                              <div key={index} className="flex items-start gap-3">
-                                <div className="w-2 h-2 bg-[#C1C8E4] rounded-full mt-2 flex-shrink-0"></div>
+                              <li key={index} className="flex items-start gap-3">
+                                <div aria-hidden="true" className="w-2 h-2 bg-[#C1C8E4] rounded-full mt-2 flex-shrink-0"></div>
                                 <span className="text-sm font-body text-gray-700 leading-relaxed">{item}</span>
-                              </div>
+                              </li>
                             ))}
-                          </div>
+                          </ul>
                         </div>
 
                         {/* Subsection 2.4 */}

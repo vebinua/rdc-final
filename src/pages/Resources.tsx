@@ -3,12 +3,11 @@ import PageHeader from '../components/PageHeader';
 
 const Resources: React.FC = () => {
   return (
-    <div className="text-white">
-      {/* Header Banner Section */}
-      <header role="banner" className="relative">
+    <div>
+      {/* Hero Section */}
+      <section aria-label="Resources hero" className="relative">
         {/* Background Image Container */}
-        <div 
-          id="header-background"
+        <div
           className="header-background absolute inset-0"
           style={{
             backgroundImage: 'url(/marinabay3.png)',
@@ -24,33 +23,27 @@ const Resources: React.FC = () => {
 
         {/* Background Overlay */}
         <div 
-          id="header-overlay"
           className="header-overlay absolute inset-0 z-10 bg-gradient-to-br from-black/40 via-black/30 to-black/50"
         >
           {/* Radial overlay for focus */}
-          <div 
-            id="header-radial-overlay"
+          <div
             className="header-radial-overlay absolute inset-0 bg-radial-gradient from-transparent via-black/20 to-black/40 pb-8"
           />
         </div>
         
         {/* Main Hero Section */}
         <section
-          id="hero-section"
           className="hero-section relative min-h-screen flex items-center justify-center"
         >
           {/* Content Container */}
-          <div 
-            id="hero-content-container"
+          <div
             className="hero-content-container relative z-20 text-center text-white px-6 max-w-7xl mx-auto"
           >
-            <div 
-              id="hero-content-wrapper"
+            <div
               className="hero-content-wrapper py-12 md:py-16 font-sans"
             >
               {/* Main Heading */}
-              <h1 
-                id="main-heading"
+              <h1
                 className="main-heading text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-2xl"
               >
                 Resources
@@ -65,12 +58,10 @@ const Resources: React.FC = () => {
               </h2>
               
               {/* Description Section */}
-              <div 
-                id="description-section"
+              <div
                 className="description-section max-w-5xl mx-auto mb-12"
               >
-                <p 
-                  id="main-description"
+                <p
                   className="main-description text-base sm:text-lg md:text-xl lg:text-2xl mb-6 text-white/90 leading-relaxed font-light drop-shadow-lg"
                 >
                   Your comprehensive resource center for business insights and guidance
@@ -79,7 +70,7 @@ const Resources: React.FC = () => {
             </div>
           </div>
         </section>
-      </header>
+      </section>
 
       {/* Visual Separation Element */}
       <div aria-hidden="true" className="relative z-20">
