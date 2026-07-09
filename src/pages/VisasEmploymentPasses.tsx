@@ -114,7 +114,7 @@ const VisasEmploymentPasses = () => {
                 <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 md:p-12">
                   <div className="space-y-6 text-center">
                     <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                      Getting the right work pass is a key step for anyone looking to work in Singapore. The Ministry of Manpower (MOM) offers a variety of <a href="https://www.mom.gov.sg/passes-and-permits" target="_blank" rel="noopener noreferrer" className="text-[#5680E9] hover:underline font-semibold">work passes</a> that cater to different roles, skill levels, and professional qualifications.
+                      Getting the right work pass is a key step for anyone looking to work in Singapore. The Ministry of Manpower (MOM) offers a variety of <a href="https://www.mom.gov.sg/passes-and-permits" target="_blank" rel="noopener noreferrer" className="text-[#5680E9] underline hover:text-[#4c6fd4] font-semibold">work passes</a> that cater to different roles, skill levels, and professional qualifications.
                     </p>
 
                     <p className="text-base md:text-lg text-gray-700 leading-relaxed">

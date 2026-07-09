@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
                       href="https://www.google.com/maps/place/RDC+Corporate+F.K.A+Red+Dot+Consult/@1.291139,103.8513761,19z/data=!3m2!4b1!5s0x31da190a6a7e722b:0xc6cbf45ccb1e5bab!4m6!3m5!1s0x31da19a7286aafa5:0xd468d5e630faa716!8m2!3d1.291139!4d103.8513761!16s%2Fg%2F11hz17fptb?entry=ttu&g_ep=EgoyMDI1MTEwOS4wIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-gray-400 hover:text-blue-400 transition-colors duration-300 font-body leading-relaxed block"
+                      className="text-sm text-gray-400 underline hover:text-blue-400 transition-colors duration-300 font-body leading-relaxed block"
                     >
                       1 Coleman St, #10-10, Singapore 179803
                     </a>
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-gray-300 mb-1 font-sans">Phone</p>
-                    <a href="tel:+6562235466" className="text-sm text-gray-400 hover:text-blue-400 transition-colors duration-300 font-body">
+                    <a href="tel:+6562235466" className="text-sm text-gray-400 underline hover:text-blue-400 transition-colors duration-300 font-body">
                       +65 6223 5466
                     </a>
                   </div>
@@ -134,9 +134,9 @@ const Footer: React.FC = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-gray-300 mb-1 font-sans">Email</p>
-                    <a 
-                      href="mailto:contact@rdccorporate.com" 
-                      className="text-sm text-gray-400 hover:text-blue-400 transition-colors duration-300 font-body hover:underline"
+                    <a
+                      href="mailto:contact@rdccorporate.com"
+                      className="text-sm text-gray-400 underline hover:text-blue-400 transition-colors duration-300 font-body"
                     >
                       contact@rdccorporate.com
                     </a>

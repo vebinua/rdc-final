@@ -225,10 +225,10 @@ const Home: React.FC = () => {
                     <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-8 tracking-tight">
                       We have helped{' '}
                       <span className="relative inline-block">
-                        <span className="relative z-10 bg-gradient-to-r from-[#5680E9] via-[#5AB9EA] to-[#84CEEB] bg-clip-text text-transparent">
+                        <span className="relative z-10 text-[#5680E9]">
                           hundreds of businesses
                         </span>
-                        <div className="absolute bottom-1 left-0 right-0 h-3 bg-gradient-to-r from-[#5680E9]/20 via-[#5AB9EA]/20 to-[#84CEEB]/20 -rotate-1 rounded"></div>
+                        <div aria-hidden="true" className="absolute bottom-1 left-0 right-0 h-3 bg-gradient-to-r from-[#5680E9]/20 via-[#5AB9EA]/20 to-[#84CEEB]/20 -rotate-1 rounded"></div>
                       </span>
                       {' '}establish and grow in Singapore and across Asia.
                     </p>

@@ -435,7 +435,7 @@ const Contact = () => {
                       </div>
                       <div className="flex items-center gap-3">
                         <Phone aria-hidden="true" className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                        <a href={`tel:${offices[0].phone}`} className="text-gray-700 hover:text-blue-600 transition-colors font-semibold">{offices[0].phone}</a>
+                        <a href={`tel:${offices[0].phone}`} className="text-gray-700 underline hover:text-blue-600 transition-colors font-semibold">{offices[0].phone}</a>
                       </div>
                       <div className="flex items-center gap-3">
                         <div aria-hidden="true" className="w-5 h-4 flex items-center justify-center flex-shrink-0">
@@ -445,7 +445,7 @@ const Contact = () => {
                       </div>
                       <div className="flex items-center gap-3">
                         <Mail aria-hidden="true" className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                        <a href={`mailto:${offices[0].email}`} className="text-gray-700 hover:text-blue-600 transition-colors font-semibold">{offices[0].email}</a>
+                        <a href={`mailto:${offices[0].email}`} className="text-gray-700 underline hover:text-blue-600 transition-colors font-semibold">{offices[0].email}</a>
                       </div>
                     </div>
                   </div>
@@ -477,11 +477,11 @@ const Contact = () => {
                         </div>
                         <p className="text-sm text-gray-600 mb-4 whitespace-pre-line leading-relaxed">{office.address}</p>
                         <div className="flex flex-wrap gap-6 text-sm">
-                          <a href={`tel:${office.phone}`} className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-2">
+                          <a href={`tel:${office.phone}`} className="text-blue-600 underline hover:text-blue-800 font-semibold flex items-center gap-2">
                             <Phone aria-hidden="true" className="w-4 h-4" />
                             {office.phone}
                           </a>
-                          <a href={`mailto:${office.email}`} className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-2">
+                          <a href={`mailto:${office.email}`} className="text-blue-600 underline hover:text-blue-800 font-semibold flex items-center gap-2">
                             <Mail aria-hidden="true" className="w-4 h-4" />
                             Email
                           </a>

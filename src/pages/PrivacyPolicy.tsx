@@ -11,7 +11,7 @@ const PrivacyPolicy: React.FC = () => {
   };
 
   return (
-    <div className="text-white">
+    <div>
       <SEOHead
         title="Privacy Policy - RDC Corporate"
         description="Privacy Policy for RDC Corporate Pte. Ltd. and its subsidiaries regarding the collection, use, and disclosure of personal data."
