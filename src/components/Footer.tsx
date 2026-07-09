@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="space-y-2">
+            <address className="space-y-2 not-italic">
               {/* Address */}
               <div className="group hover:bg-gray-800/50 rounded-xl p-2 transition-all duration-300">
                 <div className="flex items-start gap-3">
@@ -143,10 +143,8 @@ const Footer: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </address>
           </div>
-
-          {/* Associate Company */}
           <div className="space-y-3">
             <div className="relative mb-4">
               <div className="flex items-center gap-3 mb-3">

@@ -435,7 +435,7 @@ const Home: React.FC = () => {
 
               <div className="relative z-10 flex flex-col h-full">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <Building className="w-6 h-6 text-white" />
+                  <Building aria-hidden="true" className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300 font-sans leading-tight">
                   Formation of Singapore Entities
@@ -444,7 +444,7 @@ const Home: React.FC = () => {
                   Complete setup and registration of Singapore companies and business entities
                 </p>
                 <div className="flex items-center text-[#5680E9] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                  Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
@@ -457,7 +457,7 @@ const Home: React.FC = () => {
 
               <div className="relative z-10 flex flex-col h-full">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#5AB9EA] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <Globe className="w-6 h-6 text-white" />
+                  <Globe aria-hidden="true" className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#8860D0] transition-colors duration-300 font-sans">
                   Formation of Foreign Companies
@@ -466,7 +466,7 @@ const Home: React.FC = () => {
                   International entity formation and offshore company setup
                 </p>
                 <div className="flex items-center text-[#8860D0] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                  Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
@@ -479,7 +479,7 @@ const Home: React.FC = () => {
 
               <div className="relative z-10 flex flex-col h-full">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#C1C8E4] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <FileText className="w-6 h-6 text-white" />
+                  <FileText aria-hidden="true" className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#84CEEB] transition-colors duration-300 font-sans">
                   Corporate Secretarial Services
@@ -488,7 +488,7 @@ const Home: React.FC = () => {
                   Professional corporate compliance and secretarial support
                 </p>
                 <div className="flex items-center text-[#84CEEB] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                  Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
@@ -506,7 +506,7 @@ const Home: React.FC = () => {
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#5AB9EA] to-[#84CEEB] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Calculator className="w-6 h-6 text-white" />
+                    <Calculator aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#5AB9EA] transition-colors duration-300 font-sans">
                     Accounting & Taxation
@@ -515,7 +515,7 @@ const Home: React.FC = () => {
                     Bookkeeping, financial reporting, GST compliance and corporate tax advisory
                   </p>
                   <div className="flex items-center text-[#5AB9EA] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </Link>
@@ -528,7 +528,7 @@ const Home: React.FC = () => {
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#C1C8E4] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Users className="w-6 h-6 text-white" />
+                    <Users aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#8860D0] transition-colors duration-300 font-sans">
                     CFO & BPO Services
@@ -537,7 +537,7 @@ const Home: React.FC = () => {
                     Outsourced financial leadership and operational support
                   </p>
                   <div className="flex items-center text-[#8860D0] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </Link>
@@ -550,7 +550,7 @@ const Home: React.FC = () => {
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Shield className="w-6 h-6 text-white" />
+                    <Shield aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#5680E9] transition-colors duration-300 font-sans">
                     Private Clients
@@ -559,7 +559,7 @@ const Home: React.FC = () => {
                     Strategic advisory for family offices and wealth management
                   </p>
                   <div className="flex items-center text-[#5680E9] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </Link>
@@ -572,7 +572,7 @@ const Home: React.FC = () => {
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#C1C8E4] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Users className="w-6 h-6 text-white" />
+                    <Users aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#84CEEB] transition-colors duration-300 font-sans">
                     Payroll Services
@@ -581,7 +581,7 @@ const Home: React.FC = () => {
                     Comprehensive payroll management and compliance services
                   </p>
                   <div className="flex items-center text-[#84CEEB] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </Link>
@@ -594,7 +594,7 @@ const Home: React.FC = () => {
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#5AB9EA] to-[#5680E9] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <CheckCircle className="w-6 h-6 text-white" />
+                    <CheckCircle aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#5AB9EA] transition-colors duration-300 font-sans">
                     Assurance Services
@@ -603,7 +603,7 @@ const Home: React.FC = () => {
                     Professional audit and assurance services for your business
                   </p>
                   <div className="flex items-center text-[#5AB9EA] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </Link>
@@ -616,7 +616,7 @@ const Home: React.FC = () => {
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#5680E9] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Shield className="w-6 h-6 text-white" />
+                    <Shield aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#8860D0] transition-colors duration-300 font-sans">
                     Insurance
@@ -625,7 +625,7 @@ const Home: React.FC = () => {
                     Business and corporate insurance solutions
                   </p>
                   <div className="flex items-center text-[#8860D0] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </Link>
@@ -640,7 +640,7 @@ const Home: React.FC = () => {
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Briefcase className="w-6 h-6 text-white" />
+                    <Briefcase aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#5680E9] transition-colors duration-300 font-sans">
                     Visas & Employment Passes
@@ -649,7 +649,7 @@ const Home: React.FC = () => {
                     Work visa and employment pass application assistance
                   </p>
                   <div className="flex items-center text-[#5680E9] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </Link>

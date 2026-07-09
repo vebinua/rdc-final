@@ -142,7 +142,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-14 h-14 bg-[#5680E9]/10 rounded-xl flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <FileText className="w-7 h-7 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <FileText aria-hidden="true" className="w-7 h-7 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -163,7 +163,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-14 h-14 bg-[#5680E9]/10 rounded-xl flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <BarChart3 className="w-7 h-7 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <BarChart3 aria-hidden="true" className="w-7 h-7 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -187,7 +187,7 @@ const AccountingTaxation = () => {
                   <div className="flex flex-col md:flex-row gap-10 items-start">
                     <div className="flex-shrink-0">
                       <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                        <Shield className="w-10 h-10 text-white" />
+                        <Shield aria-hidden="true" className="w-10 h-10 text-white" />
                       </div>
                     </div>
 
@@ -225,7 +225,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <ClipboardList className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <ClipboardList aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -239,7 +239,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <BarChart3 className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <BarChart3 aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -253,7 +253,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <FileText className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <FileText aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -267,7 +267,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Calculator className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Calculator aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -281,7 +281,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Building className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Building aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -295,7 +295,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Users className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Users aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -312,7 +312,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <DollarSign className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <DollarSign aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -326,7 +326,7 @@ const AccountingTaxation = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Shield className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Shield aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -368,7 +368,7 @@ const AccountingTaxation = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Award className="w-6 h-6 text-white" />
+                          <Award aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5680E9] transition-colors duration-300">
@@ -393,7 +393,7 @@ const AccountingTaxation = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <ClipboardList className="w-6 h-6 text-white" />
+                          <ClipboardList aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#8860D0] transition-colors duration-300">
@@ -418,7 +418,7 @@ const AccountingTaxation = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#84CEEB] to-[#5AB9EA] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#5AB9EA] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <TrendingUp className="w-6 h-6 text-white" />
+                          <TrendingUp aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#84CEEB] transition-colors duration-300">
@@ -443,7 +443,7 @@ const AccountingTaxation = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#5AB9EA] to-[#5680E9] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#5AB9EA] to-[#5680E9] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <FileText className="w-6 h-6 text-white" />
+                          <FileText aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5AB9EA] transition-colors duration-300">

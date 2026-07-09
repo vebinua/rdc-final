@@ -140,7 +140,7 @@ const VisasEmploymentPasses = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Briefcase className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Briefcase aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -155,7 +155,7 @@ const VisasEmploymentPasses = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Users className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Users aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -170,7 +170,7 @@ const VisasEmploymentPasses = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Clock className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Clock aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -185,7 +185,7 @@ const VisasEmploymentPasses = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <FileCheck className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <FileCheck aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -218,7 +218,7 @@ const VisasEmploymentPasses = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <CheckCircle className="w-6 h-6 text-white" />
+                          <CheckCircle aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5680E9] transition-colors duration-300">
@@ -243,7 +243,7 @@ const VisasEmploymentPasses = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Award className="w-6 h-6 text-white" />
+                          <Award aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#8860D0] transition-colors duration-300">
@@ -308,10 +308,10 @@ const VisasEmploymentPasses = () => {
                         <div className="relative">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                           <div className="relative w-24 h-24 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl">
-                            <MessageSquare className="w-12 h-12 text-white" strokeWidth={1.5} />
+                            <MessageSquare aria-hidden="true" className="w-12 h-12 text-white" strokeWidth={1.5} />
                           </div>
                           <div className="absolute -top-1 -right-1 w-7 h-7 bg-purple-600 rounded-lg flex items-center justify-center shadow-md">
-                            <Check className="w-4 h-4 text-white" strokeWidth={3} />
+                            <Check aria-hidden="true" className="w-4 h-4 text-white" strokeWidth={3} />
                           </div>
                         </div>
                       </div>
@@ -336,10 +336,10 @@ const VisasEmploymentPasses = () => {
                         <div className="relative">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                           <div className="relative w-24 h-24 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl">
-                            <FolderOpen className="w-12 h-12 text-white" strokeWidth={1.5} />
+                            <FolderOpen aria-hidden="true" className="w-12 h-12 text-white" strokeWidth={1.5} />
                           </div>
                           <div className="absolute top-1 -right-2 w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center shadow-md transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
-                            <FileText className="w-5 h-5 text-white" strokeWidth={2} />
+                            <FileText aria-hidden="true" className="w-5 h-5 text-white" strokeWidth={2} />
                           </div>
                         </div>
                       </div>
@@ -364,10 +364,10 @@ const VisasEmploymentPasses = () => {
                         <div className="relative">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                           <div className="relative w-24 h-24 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl">
-                            <FileText className="w-12 h-12 text-white" strokeWidth={1.5} />
+                            <FileText aria-hidden="true" className="w-12 h-12 text-white" strokeWidth={1.5} />
                           </div>
                           <div className="absolute -bottom-1 -right-1 w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-500">
-                            <CheckCircle className="w-6 h-6 text-white" strokeWidth={2.5} />
+                            <CheckCircle aria-hidden="true" className="w-6 h-6 text-white" strokeWidth={2.5} />
                           </div>
                         </div>
                       </div>
@@ -425,7 +425,7 @@ const VisasEmploymentPasses = () => {
                       <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-[#5680E9] hover:shadow-xl transition-all duration-300 h-full">
                         <div className="flex flex-col items-center text-center">
                           <div className="w-16 h-16 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-full flex items-center justify-center mb-4 shadow-md">
-                            <Send className="w-8 h-8 text-white" strokeWidth={2} />
+                            <Send aria-hidden="true" className="w-8 h-8 text-white" strokeWidth={2} />
                           </div>
                           <div className="mb-4">
                             <div className="inline-block px-3 py-1 bg-[#5680E9] text-white text-xs font-bold rounded-full mb-2">STEP 1</div>
@@ -450,7 +450,7 @@ const VisasEmploymentPasses = () => {
                       <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-[#6B7FE8] hover:shadow-xl transition-all duration-300 h-full">
                         <div className="flex flex-col items-center text-center">
                           <div className="w-16 h-16 bg-gradient-to-br from-[#6B7FE8] to-[#84CEEB] rounded-full flex items-center justify-center mb-4 shadow-md">
-                            <Mail className="w-8 h-8 text-white" strokeWidth={2} />
+                            <Mail aria-hidden="true" className="w-8 h-8 text-white" strokeWidth={2} />
                           </div>
                           <div className="mb-4">
                             <div className="inline-block px-3 py-1 bg-[#6B7FE8] text-white text-xs font-bold rounded-full mb-2">STEP 2</div>
@@ -474,7 +474,7 @@ const VisasEmploymentPasses = () => {
                       <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-[#8860D0] hover:shadow-xl transition-all duration-300 h-full">
                         <div className="flex flex-col items-center text-center">
                           <div className="w-16 h-16 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-full flex items-center justify-center mb-4 shadow-md">
-                            <Plane className="w-8 h-8 text-white" strokeWidth={2} />
+                            <Plane aria-hidden="true" className="w-8 h-8 text-white" strokeWidth={2} />
                           </div>
                           <div className="mb-4">
                             <div className="inline-block px-3 py-1 bg-[#8860D0] text-white text-xs font-bold rounded-full mb-2">STEP 3</div>
@@ -498,7 +498,7 @@ const VisasEmploymentPasses = () => {
                       <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-[#7B6FD8] hover:shadow-xl transition-all duration-300 h-full">
                         <div className="flex flex-col items-center text-center">
                           <div className="w-16 h-16 bg-gradient-to-br from-[#7B6FD8] to-[#84CEEB] rounded-full flex items-center justify-center mb-4 shadow-md">
-                            <Bell className="w-8 h-8 text-white" strokeWidth={2} />
+                            <Bell aria-hidden="true" className="w-8 h-8 text-white" strokeWidth={2} />
                           </div>
                           <div className="mb-4">
                             <div className="inline-block px-3 py-1 bg-[#7B6FD8] text-white text-xs font-bold rounded-full mb-2">STEP 4</div>
@@ -522,7 +522,7 @@ const VisasEmploymentPasses = () => {
                       <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-[#5680E9] hover:shadow-xl transition-all duration-300 h-full">
                         <div className="flex flex-col items-center text-center">
                           <div className="w-16 h-16 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-full flex items-center justify-center mb-4 shadow-md">
-                            <Building2 className="w-8 h-8 text-white" strokeWidth={2} />
+                            <Building2 aria-hidden="true" className="w-8 h-8 text-white" strokeWidth={2} />
                           </div>
                           <div className="mb-4">
                             <div className="inline-block px-3 py-1 bg-[#5680E9] text-white text-xs font-bold rounded-full mb-2">STEP 5</div>

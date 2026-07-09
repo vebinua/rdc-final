@@ -183,7 +183,7 @@ const Services = () => {
                   
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <Building className="w-6 h-6 text-white" />
+                      <Building aria-hidden="true" className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#5680E9] transition-colors duration-300 font-sans leading-tight">
                       Company Formation & Corporate Secretarial
@@ -192,7 +192,7 @@ const Services = () => {
                      Singapore, foreign and offshore entity setup, nominee director services
                     </p>
                     <div className="flex items-center text-[#5680E9] font-semibold text-lg group-hover:gap-3 transition-all duration-300 font-sans">
-                      Learn More <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                      Learn More <ArrowRight aria-hidden="true" className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
                   </div>
                 </Link>
@@ -206,7 +206,7 @@ const Services = () => {
                   
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#5AB9EA] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <Calculator className="w-6 h-6 text-white" />
+                      <Calculator aria-hidden="true" className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#8860D0] transition-colors duration-300 font-sans">
                       Accounting & Taxation
@@ -215,7 +215,7 @@ const Services = () => {
                       Bookkeeping, financial reporting, GST compliance and corporate tax compliance and advisory.
                     </p>
                     <div className="flex items-center text-[#8860D0] font-semibold text-lg group-hover:gap-3 transition-all duration-300 font-sans">
-                      Learn More <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                      Learn More <ArrowRight aria-hidden="true" className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
                   </div>
                 </Link>
@@ -229,7 +229,7 @@ const Services = () => {
                   
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#C1C8E4] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <Users className="w-6 h-6 text-white" />
+                      <Users aria-hidden="true" className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#84CEEB] transition-colors duration-300 font-sans">
                       CFO & BPO Services
@@ -238,7 +238,7 @@ const Services = () => {
                      Outsourced financial leadership and operational support
                     </p>
                     <div className="flex items-center text-[#84CEEB] font-semibold text-lg group-hover:gap-3 transition-all duration-300 font-sans">
-                      Learn More <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                      Learn More <ArrowRight aria-hidden="true" className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
                   </div>
                 </Link>
@@ -252,7 +252,7 @@ const Services = () => {
                   
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#5AB9EA] to-[#8860D0] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <Shield className="w-6 h-6 text-white" />
+                      <Shield aria-hidden="true" className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#5AB9EA] transition-colors duration-300 font-sans">
                       Private Clients
@@ -261,7 +261,7 @@ const Services = () => {
                     Strategic advisory for family offices and wealth management.
                     </p>
                     <div className="flex items-center text-[#5AB9EA] font-semibold text-lg group-hover:gap-3 transition-all duration-300 font-sans">
-                      Learn More <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                      Learn More <ArrowRight aria-hidden="true" className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
                   </div>
                 </Link>
@@ -298,7 +298,7 @@ const Services = () => {
                     Accurate, compliant, and hassle-free payroll solutions for businesses of all sizes.
                   </p>
                   <div className="flex items-center text-[#5680E9] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                   </div>
                 </Link>
@@ -312,7 +312,7 @@ const Services = () => {
                   
                   <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#5AB9EA] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <CheckCircle className="w-6 h-6 text-white" />
+                    <CheckCircle aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#8860D0] transition-colors duration-300 font-sans leading-tight">
                     Assurance Services
@@ -321,7 +321,7 @@ const Services = () => {
                     Unbiased assessment of financial statements, internal controls, and risk management processes.
                   </p>
                   <div className="flex items-center text-[#8860D0] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                   </div>
                 </Link>
@@ -335,7 +335,7 @@ const Services = () => {
                   
                   <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#C1C8E4] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Building2 className="w-6 h-6 text-white" />
+                    <Building2 aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#84CEEB] transition-colors duration-300 font-sans leading-tight">
                     Insurance
@@ -344,7 +344,7 @@ const Services = () => {
                     Holistic insurance solutions that safeguard your business, assets, and people.
                   </p>
                   <div className="flex items-center text-[#84CEEB] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                   </div>
                 </Link>
@@ -358,7 +358,7 @@ const Services = () => {
                   
                   <div className="relative z-10 flex flex-col h-full">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#5AB9EA] to-[#8860D0] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Plane className="w-6 h-6 text-white" />
+                    <Plane aria-hidden="true" className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#5AB9EA] transition-colors duration-300 font-sans leading-tight">
                     Visas & Employment Passes
@@ -367,7 +367,7 @@ const Services = () => {
                     End-to-end support for all types of work passes and employment documentation in Singapore.
                   </p>
                   <div className="flex items-center text-[#5AB9EA] font-semibold text-sm group-hover:gap-3 transition-all duration-300 font-sans">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    Learn More <ArrowRight aria-hidden="true" className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                   </div>
                 </Link>
@@ -406,7 +406,7 @@ const Services = () => {
                   className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-sans"
                 >
                   Schedule Consultation
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight aria-hidden="true" className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
                 </div>
               </div>

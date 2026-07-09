@@ -132,7 +132,7 @@ const Header: React.FC = () => {
               to="/"
               className={`group font-semibold transition-all duration-300 hover:scale-105 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#84CEEB] focus-visible:ring-offset-2 rounded-sm ${
                 isScrolled
-                  ? 'text-gray-700 hover:text-[#5680E9]'
+                  ? 'text-gray-700 hover:text-[#1d4ed8]'
                   : 'text-white hover:text-[#84CEEB]'
               }`}
             >
@@ -162,7 +162,7 @@ const Header: React.FC = () => {
                 }}
                 className={`flex items-center space-x-1 font-semibold transition-all duration-300 hover:scale-105 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#84CEEB] focus-visible:ring-offset-2 rounded-sm ${
                   isScrolled
-                    ? 'text-gray-700 hover:text-[#5680E9]'
+                    ? 'text-gray-700 hover:text-[#1d4ed8]'
                     : 'text-white hover:text-[#84CEEB]'
                 }`}
               >
@@ -187,7 +187,7 @@ const Header: React.FC = () => {
 
                   <Link
                     to="/services/formation-singapore-entities"
-                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -200,7 +200,7 @@ const Header: React.FC = () => {
 
                   <Link
                     to="/services/formation-foreign-companies"
-                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#8860D0] to-[#5AB9EA] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -213,7 +213,7 @@ const Header: React.FC = () => {
 
                   <Link
                     to="/services/corporate-secretarial-services"
-                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#84CEEB] to-[#C1C8E4] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -226,7 +226,7 @@ const Header: React.FC = () => {
 
                   <Link
                     to="/services/accounting-taxation"
-                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#8860D0] to-[#5AB9EA] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -239,7 +239,7 @@ const Header: React.FC = () => {
 
                   <Link
                     to="/services/cfo-bpo"
-                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#84CEEB] to-[#C1C8E4] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -252,7 +252,7 @@ const Header: React.FC = () => {
 
                   <Link
                     to="/services/private-clients"
-                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#5AB9EA] to-[#8860D0] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -337,7 +337,7 @@ const Header: React.FC = () => {
                       <div className="p-2">
                         <Link
                           to="/services/payroll-services"
-                          className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                          className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                           onClick={closeMenu}
                         >
                           <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -350,7 +350,7 @@ const Header: React.FC = () => {
 
                         <Link
                           to="/services/assurance"
-                          className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                          className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                           onClick={closeMenu}
                         >
                           <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#8860D0] to-[#5AB9EA] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -363,7 +363,7 @@ const Header: React.FC = () => {
 
                         <Link
                           to="/services/insurance"
-                          className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                          className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                           onClick={closeMenu}
                         >
                           <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#84CEEB] to-[#C1C8E4] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -376,7 +376,7 @@ const Header: React.FC = () => {
 
                         <Link
                           to="/services/visas-employment-passes"
-                          className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                          className="flex items-center space-x-3 w-full px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                           onClick={closeMenu}
                         >
                           <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-[#5AB9EA] to-[#8860D0] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -397,7 +397,7 @@ const Header: React.FC = () => {
               to="/about"
               className={`group font-semibold transition-all duration-300 hover:scale-105 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#84CEEB] focus-visible:ring-offset-2 rounded-sm ${
                 isScrolled
-                  ? 'text-gray-700 hover:text-[#5680E9]'
+                  ? 'text-gray-700 hover:text-[#1d4ed8]'
                   : 'text-white hover:text-[#84CEEB]'
               }`}
             >
@@ -454,7 +454,7 @@ const Header: React.FC = () => {
           <div className="py-4 space-y-2 bg-white/95 backdrop-blur-sm rounded-xl mt-4 shadow-xl border border-gray-200">
             <Link
               to="/"
-              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] transition-all duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9] focus-visible:ring-inset"
+              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] transition-all duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9] focus-visible:ring-inset"
               onClick={closeMenu}
             >
               Home
@@ -466,7 +466,7 @@ const Header: React.FC = () => {
                 onClick={() => setIsServicesOpen(prev => !prev)}
                 aria-expanded={isServicesOpen}
                 aria-controls="mobile-services-menu"
-                className="flex items-center justify-between w-full py-3 text-gray-700 hover:text-[#5680E9] transition-all duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                className="flex items-center justify-between w-full py-3 text-gray-700 hover:text-[#1d4ed8] transition-all duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
               >
                 <span>Services</span>
                 <ChevronDown aria-hidden="true" className={`w-4 h-4 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
@@ -481,21 +481,21 @@ const Header: React.FC = () => {
                 <div className="pl-4 space-y-1 border-l-2 border-blue-100">
                   <Link
                     to="/services/formation-singapore-entities"
-                    className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     Singapore Entities
                   </Link>
                   <Link
                     to="/services/formation-foreign-companies"
-                    className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     Foreign Entities
                   </Link>
                   <Link
                     to="/services/corporate-secretarial-services"
-                    className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     Corporate Secretarial
@@ -503,21 +503,21 @@ const Header: React.FC = () => {
 
                   <Link
                     to="/services/accounting-taxation"
-                    className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     Accounting & Taxation
                   </Link>
                   <Link
                     to="/services/cfo-bpo"
-                    className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     CFO & BPO Services
                   </Link>
                   <Link
                     to="/services/private-clients"
-                    className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                    className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     onClick={closeMenu}
                   >
                     Private Clients
@@ -529,7 +529,7 @@ const Header: React.FC = () => {
                       onClick={() => setIsOtherServicesOpen(prev => !prev)}
                       aria-expanded={isOtherServicesOpen}
                       aria-controls="mobile-other-services-menu"
-                      className="flex items-center justify-between w-full py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                      className="flex items-center justify-between w-full py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                     >
                       <span>Other Services</span>
                       <ChevronDown aria-hidden="true" className={`w-4 h-4 transition-transform duration-300 ${isOtherServicesOpen ? 'rotate-180' : ''}`} />
@@ -544,28 +544,28 @@ const Header: React.FC = () => {
                       <div className="pl-4 space-y-1 border-l-2 border-blue-100 mt-1">
                         <Link
                           to="/services/payroll-services"
-                          className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                          className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                           onClick={closeMenu}
                         >
                           Payroll Services
                         </Link>
                         <Link
                           to="/services/assurance"
-                          className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                          className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                           onClick={closeMenu}
                         >
                           Assurance Services
                         </Link>
                         <Link
                           to="/services/insurance"
-                          className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                          className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                           onClick={closeMenu}
                         >
                           Insurance Services
                         </Link>
                         <Link
                           to="/services/visas-employment-passes"
-                          className="block py-2 text-gray-600 hover:text-[#5680E9] transition-all duration-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
+                          className="block py-2 text-gray-600 hover:text-[#1d4ed8] transition-all duration-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9]"
                           onClick={closeMenu}
                         >
                           Visas & Employment Passes
@@ -579,7 +579,7 @@ const Header: React.FC = () => {
 
             <Link
               to="/about"
-              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#5680E9] transition-all duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9] focus-visible:ring-inset"
+              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#1d4ed8] transition-all duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5680E9] focus-visible:ring-inset"
               onClick={closeMenu}
             >
               About

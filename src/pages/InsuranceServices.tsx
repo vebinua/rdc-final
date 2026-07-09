@@ -127,7 +127,7 @@ const InsuranceServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Briefcase className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Briefcase aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -142,7 +142,7 @@ const InsuranceServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Users className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Users aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -157,7 +157,7 @@ const InsuranceServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <AlertTriangle className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <AlertTriangle aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -172,7 +172,7 @@ const InsuranceServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Shield className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Shield aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -187,7 +187,7 @@ const InsuranceServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Lock className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Lock aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -202,7 +202,7 @@ const InsuranceServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <FileCheck className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <FileCheck aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>

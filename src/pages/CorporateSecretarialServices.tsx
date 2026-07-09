@@ -151,7 +151,7 @@ const CorporateSecretarialServices = () => {
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                        <FileText className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                        <FileText aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                       </div>
                     </div>
                     <div>
@@ -168,7 +168,7 @@ const CorporateSecretarialServices = () => {
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                        <FolderOpen className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                        <FolderOpen aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                       </div>
                     </div>
                     <div>
@@ -185,7 +185,7 @@ const CorporateSecretarialServices = () => {
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                        <ClipboardList className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                        <ClipboardList aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                       </div>
                     </div>
                     <div>
@@ -202,7 +202,7 @@ const CorporateSecretarialServices = () => {
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                        <Users className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                        <Users aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                       </div>
                     </div>
                     <div>
@@ -219,7 +219,7 @@ const CorporateSecretarialServices = () => {
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                        <Building className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                        <Building aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                       </div>
                     </div>
                     <div>
@@ -236,7 +236,7 @@ const CorporateSecretarialServices = () => {
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                        <Shield className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                        <Shield aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                       </div>
                     </div>
                     <div>
@@ -253,7 +253,7 @@ const CorporateSecretarialServices = () => {
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                        <FileText className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                        <FileText aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                       </div>
                     </div>
                     <div>
@@ -270,7 +270,7 @@ const CorporateSecretarialServices = () => {
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                        <Briefcase className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                        <Briefcase aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                       </div>
                     </div>
                     <div>
@@ -307,7 +307,7 @@ const CorporateSecretarialServices = () => {
                         <div className="relative flex-shrink-0">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#5680E9] to-[#4c6fd4] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                           <div className="relative w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#4c6fd4] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                            <Award className="w-6 h-6 text-white" />
+                            <Award aria-hidden="true" className="w-6 h-6 text-white" />
                           </div>
                         </div>
                         <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5680E9] transition-colors duration-300">
@@ -332,7 +332,7 @@ const CorporateSecretarialServices = () => {
                         <div className="relative flex-shrink-0">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#84CEEB] to-[#0ea5e9] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                           <div className="relative w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#0ea5e9] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                            <Users className="w-6 h-6 text-white" />
+                            <Users aria-hidden="true" className="w-6 h-6 text-white" />
                           </div>
                         </div>
                         <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#84CEEB] transition-colors duration-300">
@@ -357,7 +357,7 @@ const CorporateSecretarialServices = () => {
                         <div className="relative flex-shrink-0">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#5AB9EA] to-[#0284c7] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                           <div className="relative w-12 h-12 bg-gradient-to-br from-[#5AB9EA] to-[#0284c7] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                            <Briefcase className="w-6 h-6 text-white" />
+                            <Briefcase aria-hidden="true" className="w-6 h-6 text-white" />
                           </div>
                         </div>
                         <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5AB9EA] transition-colors duration-300">

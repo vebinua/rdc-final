@@ -130,7 +130,7 @@ const CFOBPOServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <LineChart className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <LineChart aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -145,7 +145,7 @@ const CFOBPOServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <PieChart className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <PieChart aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -160,7 +160,7 @@ const CFOBPOServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <DollarSign className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <DollarSign aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -175,7 +175,7 @@ const CFOBPOServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Shield className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Shield aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -219,7 +219,7 @@ const CFOBPOServices = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <BarChart3 className="w-6 h-6 text-white" />
+                          <BarChart3 aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5680E9] transition-colors duration-300">
@@ -244,7 +244,7 @@ const CFOBPOServices = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Shield className="w-6 h-6 text-white" />
+                          <Shield aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#8860D0] transition-colors duration-300">
@@ -269,7 +269,7 @@ const CFOBPOServices = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#84CEEB] to-[#5AB9EA] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#5AB9EA] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Briefcase className="w-6 h-6 text-white" />
+                          <Briefcase aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#84CEEB] transition-colors duration-300">
@@ -297,7 +297,7 @@ const CFOBPOServices = () => {
                         <div className="relative flex-shrink-0">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                           <div className="relative w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                            <Target className="w-6 h-6 text-white" />
+                            <Target aria-hidden="true" className="w-6 h-6 text-white" />
                           </div>
                         </div>
                         <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5680E9] transition-colors duration-300">
@@ -322,7 +322,7 @@ const CFOBPOServices = () => {
                         <div className="relative flex-shrink-0">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#5AB9EA] to-[#5680E9] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                           <div className="relative w-12 h-12 bg-gradient-to-br from-[#5AB9EA] to-[#5680E9] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                            <ArrowUpCircle className="w-6 h-6 text-white" />
+                            <ArrowUpCircle aria-hidden="true" className="w-6 h-6 text-white" />
                           </div>
                         </div>
                         <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5AB9EA] transition-colors duration-300">

@@ -145,7 +145,7 @@ const PrivateClientServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Briefcase className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Briefcase aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -160,7 +160,7 @@ const PrivateClientServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <TrendingUp className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <TrendingUp aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -175,7 +175,7 @@ const PrivateClientServices = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Globe className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Globe aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -203,7 +203,7 @@ const PrivateClientServices = () => {
                 <div className="flex flex-col md:flex-row gap-10 items-start">
                   <div className="flex-shrink-0">
                     <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                      <FileCheck className="w-10 h-10 text-white" />
+                      <FileCheck aria-hidden="true" className="w-10 h-10 text-white" />
                     </div>
                   </div>
 
@@ -247,7 +247,7 @@ const PrivateClientServices = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Award className="w-6 h-6 text-white" />
+                          <Award aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5680E9] transition-colors duration-300">
@@ -272,7 +272,7 @@ const PrivateClientServices = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <DollarSign className="w-6 h-6 text-white" />
+                          <DollarSign aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#8860D0] transition-colors duration-300">
@@ -297,7 +297,7 @@ const PrivateClientServices = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#84CEEB] to-[#5AB9EA] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#5AB9EA] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <CheckCircle className="w-6 h-6 text-white" />
+                          <CheckCircle aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#84CEEB] transition-colors duration-300">

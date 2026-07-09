@@ -138,7 +138,7 @@ const FormationOfForeignEntities = () => {
                       {/* Center icon */}
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="bg-gradient-to-br from-[#5680E9] to-[#84CEEB] p-8 rounded-3xl shadow-2xl transform rotate-6 hover:rotate-0 transition-transform duration-500">
-                          <TrendingUp className="w-16 h-16 text-white" />
+                          <TrendingUp aria-hidden="true" className="w-16 h-16 text-white" />
                         </div>
                       </div>
                     </div>
@@ -148,7 +148,7 @@ const FormationOfForeignEntities = () => {
                   <div className="space-y-6">
                     <div className="inline-block">
                       <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#5680E9]/10 to-[#84CEEB]/10 rounded-full border border-[#5680E9]/20">
-                        <Award className="w-4 h-4 text-[#5680E9]" />
+                        <Award aria-hidden="true" className="w-4 h-4 text-[#5680E9]" />
                         <span className="text-sm font-semibold text-[#5680E9]">Global Reach</span>
                       </div>
                     </div>
@@ -188,7 +188,7 @@ const FormationOfForeignEntities = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Building className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Building aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -202,7 +202,7 @@ const FormationOfForeignEntities = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Users className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Users aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -216,7 +216,7 @@ const FormationOfForeignEntities = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <FileText className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <FileText aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -233,7 +233,7 @@ const FormationOfForeignEntities = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <FolderOpen className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <FolderOpen aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -247,7 +247,7 @@ const FormationOfForeignEntities = () => {
                     <div className="flex items-start gap-5">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-xl bg-[#5680E9]/10 flex items-center justify-center group-hover:bg-[#5680E9] transition-colors duration-300">
-                          <Handshake className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
+                          <Handshake aria-hidden="true" className="w-6 h-6 text-[#5680E9] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
                       <div>
@@ -270,7 +270,7 @@ const FormationOfForeignEntities = () => {
             <div className="text-center mb-16">
               <div className="inline-block mb-4">
                 <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#5680E9]/10 to-[#84CEEB]/10 rounded-full border border-[#5680E9]/20">
-                  <Star className="w-4 h-4 text-[#5680E9]" />
+                  <Star aria-hidden="true" className="w-4 h-4 text-[#5680E9]" />
                   <span className="text-sm font-semibold text-[#5680E9]">Why RDC Corporate</span>
                 </div>
               </div>
@@ -296,7 +296,7 @@ const FormationOfForeignEntities = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#5680E9] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Building className="w-6 h-6 text-white" />
+                          <Building aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5680E9] transition-colors duration-300">
@@ -321,7 +321,7 @@ const FormationOfForeignEntities = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#84CEEB] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Users className="w-6 h-6 text-white" />
+                          <Users aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#8860D0] transition-colors duration-300">
@@ -346,7 +346,7 @@ const FormationOfForeignEntities = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#84CEEB] to-[#5AB9EA] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#84CEEB] to-[#5AB9EA] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Clock className="w-6 h-6 text-white" />
+                          <Clock aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#84CEEB] transition-colors duration-300">
@@ -371,7 +371,7 @@ const FormationOfForeignEntities = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#5AB9EA] to-[#5680E9] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#5AB9EA] to-[#5680E9] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Shield className="w-6 h-6 text-white" />
+                          <Shield aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#5AB9EA] transition-colors duration-300">
@@ -396,7 +396,7 @@ const FormationOfForeignEntities = () => {
                       <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#8860D0] to-[#C1C8E4] rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                         <div className="relative w-12 h-12 bg-gradient-to-br from-[#8860D0] to-[#C1C8E4] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                          <Users className="w-6 h-6 text-white" />
+                          <Users aria-hidden="true" className="w-6 h-6 text-white" />
                         </div>
                       </div>
                       <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-[#8860D0] transition-colors duration-300">
@@ -481,10 +481,10 @@ const FormationOfForeignEntities = () => {
                         <div className="relative">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                           <div className="relative w-24 h-24 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl">
-                            <ClipboardList className="w-12 h-12 text-white" strokeWidth={1.5} />
+                            <ClipboardList aria-hidden="true" className="w-12 h-12 text-white" strokeWidth={1.5} />
                           </div>
                           <div className="absolute -top-1 -right-1 w-7 h-7 bg-purple-600 rounded-lg flex items-center justify-center shadow-md">
-                            <Check className="w-4 h-4 text-white" strokeWidth={3} />
+                            <Check aria-hidden="true" className="w-4 h-4 text-white" strokeWidth={3} />
                           </div>
                         </div>
                       </div>
@@ -509,10 +509,10 @@ const FormationOfForeignEntities = () => {
                         <div className="relative">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                           <div className="relative w-24 h-24 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl">
-                            <FolderOpen className="w-12 h-12 text-white" strokeWidth={1.5} />
+                            <FolderOpen aria-hidden="true" className="w-12 h-12 text-white" strokeWidth={1.5} />
                           </div>
                           <div className="absolute top-1 -right-2 w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center shadow-md transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
-                            <FileText className="w-5 h-5 text-white" strokeWidth={2} />
+                            <FileText aria-hidden="true" className="w-5 h-5 text-white" strokeWidth={2} />
                           </div>
                         </div>
                       </div>
@@ -537,10 +537,10 @@ const FormationOfForeignEntities = () => {
                         <div className="relative">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                           <div className="relative w-24 h-24 bg-gradient-to-br from-[#8B7BE8] to-[#6C5DD3] rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl">
-                            <FileText className="w-12 h-12 text-white" strokeWidth={1.5} />
+                            <FileText aria-hidden="true" className="w-12 h-12 text-white" strokeWidth={1.5} />
                           </div>
                           <div className="absolute -bottom-1 -right-1 w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-500">
-                            <CheckCircle className="w-6 h-6 text-white" strokeWidth={2.5} />
+                            <CheckCircle aria-hidden="true" className="w-6 h-6 text-white" strokeWidth={2.5} />
                           </div>
                         </div>
                       </div>
