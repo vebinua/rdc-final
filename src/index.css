@@ -63,6 +63,18 @@ img {
   height: auto;
 }
 
+/* Global focus-visible styles for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #5680E9;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Remove default focus outline (replaced by focus-visible above) */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Prevent horizontal scroll on all containers */
 .container {
   max-width: 100%;
@@ -139,6 +151,36 @@ img {
 /* Pause animation on hover */
 .animate-slide-infinite:hover {
   animation-play-state: paused;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-slide-infinite {
+    animation: none;
+  }
+
+  .animate-pulse {
+    animation: none;
+  }
+
+  .animate-spin,
+  .animate-spin-slow {
+    animation: none;
+  }
+
+  .animate-float,
+  .animate-float-delayed {
+    animation: none;
+  }
 }
 
 @keyframes fadeInUp {

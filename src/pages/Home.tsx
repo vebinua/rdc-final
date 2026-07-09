@@ -157,7 +157,7 @@ const Home: React.FC = () => {
         className="group inline-flex items-center justify-center rounded-full py-3 px-6 text-sm md:text-base font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-gradient-to-r from-[#5680E9] to-[#8860D0] text-white hover:from-[#4c6fd4] hover:to-[#7c3aed] active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[44px] transform hover:scale-105"
       >
         Get in Touch
-        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+        <ArrowRight aria-hidden="true" className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
       </Link>
     </div>
   </div>
@@ -184,10 +184,10 @@ const Home: React.FC = () => {
           </div>
           
           {/* Floating geometric shapes */}
-          <div className="absolute top-20 left-[10%] w-32 h-32 border-2 border-blue-200/30 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-[15%] w-24 h-24 bg-gradient-to-br from-cyan-200/20 to-blue-300/20 rounded-lg rotate-45 animate-pulse animation-delay-1000"></div>
-          <div className="absolute bottom-32 left-[20%] w-16 h-16 border-2 border-purple-200/40 rounded-lg rotate-12 animate-pulse animation-delay-2000"></div>
-          <div className="absolute bottom-20 right-[25%] w-20 h-20 bg-gradient-to-tl from-indigo-200/25 to-purple-300/25 rounded-full animate-pulse animation-delay-500"></div>
+          <div aria-hidden="true" className="absolute top-20 left-[10%] w-32 h-32 border-2 border-blue-200/30 rounded-full animate-pulse"></div>
+          <div aria-hidden="true" className="absolute top-40 right-[15%] w-24 h-24 bg-gradient-to-br from-cyan-200/20 to-blue-300/20 rounded-lg rotate-45 animate-pulse animation-delay-1000"></div>
+          <div aria-hidden="true" className="absolute bottom-32 left-[20%] w-16 h-16 border-2 border-purple-200/40 rounded-lg rotate-12 animate-pulse animation-delay-2000"></div>
+          <div aria-hidden="true" className="absolute bottom-20 right-[25%] w-20 h-20 bg-gradient-to-tl from-indigo-200/25 to-purple-300/25 rounded-full animate-pulse animation-delay-500"></div>
           
           {/* Mesh gradient overlays */}
           <div className="absolute top-0 left-0 w-1/3 h-1/2 bg-gradient-radial from-blue-400/5 via-transparent to-transparent"></div>
@@ -496,7 +496,7 @@ const Home: React.FC = () => {
 
           {/* Additional Services - Collapsible */}
           {showAllServices && (
-            <>
+            <div id="additional-services">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 max-w-7xl mx-auto">
               <Link
                 to="/services/accounting-taxation"
@@ -654,20 +654,22 @@ const Home: React.FC = () => {
                 </div>
               </Link>
             </div>
-            </>
+            </div>
           )}
 
           {/* See More Services Button */}
           <div className="text-center mb-12 mt-8">
             <button
               onClick={() => setShowAllServices(!showAllServices)}
+              aria-expanded={showAllServices}
+              aria-controls="additional-services"
               className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-gray-100 to-gray-50 text-gray-700 rounded-xl font-semibold text-lg hover:from-blue-50 hover:to-cyan-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border border-gray-200 hover:border-blue-300"
             >
               {showAllServices ? 'Show Less Services' : 'See More Services'}
               {showAllServices ? (
-                <ChevronUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform duration-300" />
+                <ChevronUp aria-hidden="true" className="w-5 h-5 group-hover:-translate-y-1 transition-transform duration-300" />
               ) : (
-                <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
+                <ChevronDown aria-hidden="true" className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
               )}
             </button>
           </div>
@@ -695,13 +697,13 @@ const Home: React.FC = () => {
           {/* Modern Partners Slider */}
           <div className="mb-12">
             <div className="relative overflow-hidden">
-              <div className="partners-slider-track flex gap-8 animate-slide-infinite">
+              <div className="partners-slider-track flex gap-8 animate-slide-infinite" aria-label="Partner logos">
                 {partnersData.map((partner, index) => (
                   <div key={`set1-${index}`} className="flex-shrink-0 group">
                     {partner.url ? (
-                      <a href={partner.url} target="_blank" rel="noopener noreferrer" className="block" aria-label={`Visit ${partner.name}`}>
-                        <img 
-                          src={partner.logo} 
+                      <a href={partner.url} target="_blank" rel="noopener noreferrer" className="block" aria-label={`Visit ${partner.name} (opens in new tab)`}>
+                        <img
+                          src={partner.logo}
                           alt={`${partner.name} logo`}
                           className="h-16 w-auto object-contain transition-all duration-300 opacity-70 hover:opacity-100 group-hover:scale-110 filter grayscale hover:grayscale-0"
                           style={{ maxWidth: '160px' }}
@@ -713,8 +715,8 @@ const Home: React.FC = () => {
                         />
                       </a>
                     ) : (
-                      <img 
-                        src={partner.logo} 
+                      <img
+                        src={partner.logo}
                         alt={`${partner.name} logo`}
                         className="h-16 w-auto object-contain transition-all duration-300 opacity-70 hover:opacity-100 group-hover:scale-110 filter grayscale hover:grayscale-0"
                         style={{ maxWidth: '160px' }}
@@ -727,14 +729,15 @@ const Home: React.FC = () => {
                     )}
                   </div>
                 ))}
-                
+
+                {/* Duplicate set for infinite scroll — hidden from screen readers */}
                 {partnersData.map((partner, index) => (
-                  <div key={`set2-${index}`} className="flex-shrink-0 group">
+                  <div key={`set2-${index}`} aria-hidden="true" className="flex-shrink-0 group">
                     {partner.url ? (
-                      <a href={partner.url} target="_blank" rel="noopener noreferrer" className="block" aria-label={`Visit ${partner.name}`}>
-                        <img 
-                          src={partner.logo} 
-                          alt={`${partner.name} logo`}
+                      <a href={partner.url} target="_blank" rel="noopener noreferrer" className="block" tabIndex={-1}>
+                        <img
+                          src={partner.logo}
+                          alt=""
                           className="h-16 w-auto object-contain transition-all duration-300 opacity-70 hover:opacity-100 group-hover:scale-110 filter grayscale hover:grayscale-0"
                           style={{ maxWidth: '160px' }}
                           loading="lazy"
@@ -745,9 +748,9 @@ const Home: React.FC = () => {
                         />
                       </a>
                     ) : (
-                      <img 
-                        src={partner.logo} 
-                        alt={`${partner.name} logo`}
+                      <img
+                        src={partner.logo}
+                        alt=""
                         className="h-16 w-auto object-contain transition-all duration-300 opacity-70 hover:opacity-100 group-hover:scale-110 filter grayscale hover:grayscale-0"
                         style={{ maxWidth: '160px' }}
                         loading="lazy"

@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 py-6 md:py-8 shadow-2xl text-white relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute inset-0 opacity-20">
+      <div aria-hidden="true" className="absolute inset-0 opacity-20">
         {/* Professional subtle pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-transparent to-gray-700/20"></div>
         
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
                 Trusted professionals in corporate and private client services since 2002.
               </p>
               <div className="inline-flex items-center gap-2 px-3 py-2 bg-gray-800/50 backdrop-blur-sm rounded-full border border-gray-600/30 shadow-md">
-                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                <div aria-hidden="true" className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                 <p className="text-sm text-gray-300 font-semibold font-sans">
                   UEN: 201408289W
                 </p>
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
               <div className="group hover:bg-gray-800/50 rounded-xl p-2 transition-all duration-300">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <MapPin size={16} className="text-white" />
+                  <MapPin aria-hidden="true" size={16} className="text-white" />
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-gray-300 mb-1 font-sans">Office Address</p>
@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
               <div className="group hover:bg-gray-800/50 rounded-xl p-2 transition-all duration-300">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Phone size={16} className="text-white" />
+                    <Phone aria-hidden="true" size={16} className="text-white" />
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-gray-300 mb-1 font-sans">Phone</p>
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
               <div className="group hover:bg-gray-800/50 rounded-xl p-2 transition-all duration-300">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Printer size={16} className="text-white" />
+                    <Printer aria-hidden="true" size={16} className="text-white" />
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-gray-300 mb-1 font-sans">Fax</p>
@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
               <div className="group hover:bg-gray-800/50 rounded-xl p-2 transition-all duration-300">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Mail size={16} className="text-white" />
+                    <Mail aria-hidden="true" size={16} className="text-white" />
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-gray-300 mb-1 font-sans">Email</p>
@@ -161,40 +161,42 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <div aria-hidden="true" className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                   <p className="text-sm text-gray-300 font-semibold font-sans">
                     Associate Company
                   </p>
                 </div>
                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-3 border border-gray-600/30 hover:bg-gray-700/50 transition-all duration-300">
-  <a 
-    href="https://thecorporatesg.com/" 
-    target="_blank" 
+  <a
+    href="https://thecorporatesg.com/"
+    target="_blank"
     rel="noopener noreferrer"
+    aria-label="The Corporate SG — Associate Company (opens in new tab)"
     className="text-sm text-gray-300 hover:text-blue-400 transition-all duration-300 flex items-center gap-2 group font-body min-h-[44px] font-light"
   >
     https://thecorporatesg.com/
-    <ExternalLink size={14} className="opacity-70 group-hover:opacity-100 transition-all duration-300" />
+    <ExternalLink aria-hidden="true" size={14} className="opacity-70 group-hover:opacity-100 transition-all duration-300" />
   </a>
 </div>
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse animation-delay-1000"></div>
+                  <div aria-hidden="true" className="w-2 h-2 bg-blue-400 rounded-full animate-pulse animation-delay-1000"></div>
                   <p className="text-sm text-gray-300 font-semibold font-sans">
                     Global Network Partner
                   </p>
-                </div> 
+                </div>
                 <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-3 border border-gray-600/30 hover:bg-gray-700/50 transition-all duration-300">
-                  <a 
-                    href="https://www.irglobal.com" 
-                    target="_blank" 
+                  <a
+                    href="https://www.irglobal.com"
+                    target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="IR Global — Global Network Partner (opens in new tab)"
                    className="text-sm text-gray-300 hover:text-blue-400 transition-all duration-300 flex items-center gap-2 group font-body min-h-[44px] font-light"
   >
                     www.irglobal.com
-                    <ExternalLink size={14} className="opacity-70 group-hover:opacity-100 transition-all duration-300" />
-                  </a> 
+                    <ExternalLink aria-hidden="true" size={14} className="opacity-70 group-hover:opacity-100 transition-all duration-300" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -227,13 +229,18 @@ const Footer: React.FC = () => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative block p-4 rounded-lg bg-gray-800/50 backdrop-blur-sm hover:bg-gray-700/50 transition-all duration-300 border border-gray-600/30 font-body min-h-[44px]"
+                    aria-label={`${link.name} — ${
+                      link.name === 'ACRA' ? 'Accounting and Corporate Regulatory Authority' :
+                      link.name === 'IRAS' ? 'Inland Revenue Authority of Singapore' :
+                      link.name === 'MOM' ? 'Ministry of Manpower' : link.name
+                    } (opens in new tab)`}
+                    className="relative block p-4 rounded-lg bg-gray-800/50 backdrop-blur-sm hover:bg-gray-700/50 transition-all duration-300 border border-gray-600/30 font-body min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="relative w-8 h-8 rounded-lg bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center">
+                      <div aria-hidden="true" className="relative w-8 h-8 rounded-lg bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center">
                         <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
                       </div>
-                      <div className="flex-1 min-w-0"> 
+                      <div className="flex-1 min-w-0">
                         <div className="flex items-center justify-between mb-1">
                           <span className="font-bold text-base text-gray-300 group-hover:text-blue-400 transition-colors duration-300">
                             {link.name}
@@ -253,7 +260,7 @@ const Footer: React.FC = () => {
                               </div>
                             )}
                           </span>
-                          <ExternalLink size={14} className="text-gray-400 group-hover:text-blue-400 transition-all duration-300 flex-shrink-0" />
+                          <ExternalLink aria-hidden="true" size={14} className="text-gray-400 group-hover:text-blue-400 transition-all duration-300 flex-shrink-0" />
                         </div>
                       </div>
                     </div>
@@ -272,7 +279,7 @@ const Footer: React.FC = () => {
                 © 2024 RDC Corporate Pte. Ltd.
               </p>
               <div className="hidden md:flex items-center gap-2">
-                <div className="w-1 h-4 bg-gradient-to-b from-gray-600 to-gray-500 rounded-full"></div>
+                <div aria-hidden="true" className="w-1 h-4 bg-gradient-to-b from-gray-600 to-gray-500 rounded-full"></div>
                 <span className="text-sm text-gray-400 font-medium font-body">All rights reserved</span>
               </div>
             </div>
@@ -284,16 +291,16 @@ const Footer: React.FC = () => {
               >
                 Privacy Policy
               </a>
-              <button 
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="text-sm hover:text-blue-400 transition-all duration-300 text-gray-300 font-semibold hover:underline flex items-center gap-1.5 group bg-gray-800/50 backdrop-blur-sm px-3 py-1.5 rounded-full border border-gray-600/30 hover:bg-gray-700/50 font-body min-h-[44px]"
-                aria-label="Back to top"
-              >
-                Back to Top
-                <svg className="w-3 h-3 group-hover:-translate-y-0.5 transition-all duration-300 text-gray-400 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-                </svg>
-              </button>
+                <button
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="text-sm hover:text-blue-400 transition-all duration-300 text-gray-300 font-semibold hover:underline flex items-center gap-1.5 group bg-gray-800/50 backdrop-blur-sm px-3 py-1.5 rounded-full border border-gray-600/30 hover:bg-gray-700/50 font-body min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
+                  aria-label="Back to top of page"
+                >
+                  Back to Top
+                  <svg aria-hidden="true" className="w-3 h-3 group-hover:-translate-y-0.5 transition-all duration-300 text-gray-400 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                  </svg>
+                </button>
             </div>
           </div>
         </div>

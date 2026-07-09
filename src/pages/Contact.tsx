@@ -245,30 +245,30 @@ const Contact = () => {
                     </div>
                     
                     {submitStatus === 'success' && (
-                      <div className="mb-8 p-6 bg-green-50 border border-green-200 rounded-xl flex items-center gap-4">
-                        <CheckCircle className="w-6 h-6 text-green-600" />
+                      <div role="alert" aria-live="assertive" className="mb-8 p-6 bg-green-50 border border-green-200 rounded-xl flex items-center gap-4">
+                        <CheckCircle aria-hidden="true" className="w-6 h-6 text-green-600 flex-shrink-0" />
                         <span className="text-green-800 font-medium">Thank you! Your message has been sent successfully.</span>
                       </div>
                     )}
 
                     {submitStatus === 'error' && (
-                      <div className="mb-8 p-6 bg-red-50 border border-red-200 rounded-xl flex items-center gap-4">
-                        <AlertCircle className="w-6 h-6 text-red-600" />
+                      <div role="alert" aria-live="assertive" className="mb-8 p-6 bg-red-50 border border-red-200 rounded-xl flex items-center gap-4">
+                        <AlertCircle aria-hidden="true" className="w-6 h-6 text-red-600 flex-shrink-0" />
                         <span className="text-red-800 font-medium">Sorry, there was an error sending your message. Please try again.</span>
                       </div>
                     )}
 
                     {submitStatus === 'captcha_error' && (
-                      <div className="mb-8 p-6 bg-red-50 border border-red-200 rounded-xl flex items-center gap-4">
-                        <AlertCircle className="w-6 h-6 text-red-600" />
-                        <span className="text-red-800 font-medium">Captcha verification failed. Please try again.</span>
+                      <div role="alert" aria-live="assertive" className="mb-8 p-6 bg-red-50 border border-red-200 rounded-xl flex items-center gap-4">
+                        <AlertCircle aria-hidden="true" className="w-6 h-6 text-red-600 flex-shrink-0" />
+                        <span className="text-red-800 font-medium">Security verification failed. Please enter the characters shown and try again.</span>
                       </div>
                     )}
 
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    <form onSubmit={handleSubmit} noValidate className="space-y-6" aria-label="Contact form">
                       <div>
                         <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-3">
-                          Full Name *
+                          Full Name <span aria-hidden="true">*</span>
                         </label>
                         <input
                           type="text"
@@ -277,6 +277,8 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
+                          aria-required="true"
+                          autoComplete="name"
                           className="w-full px-6 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-lg bg-white/80 backdrop-blur-sm hover:bg-white"
                           placeholder="Enter your full name"
                         />
@@ -284,7 +286,7 @@ const Contact = () => {
 
                       <div>
                         <label htmlFor="email" className="block text-sm font-bold text-gray-700 mb-3">
-                          Email Address *
+                          Email Address <span aria-hidden="true">*</span>
                         </label>
                         <input
                           type="email"
@@ -293,6 +295,8 @@ const Contact = () => {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
+                          aria-required="true"
+                          autoComplete="email"
                           className="w-full px-6 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-lg bg-white/80 backdrop-blur-sm hover:bg-white"
                           placeholder="Enter your email address"
                         />
@@ -300,7 +304,7 @@ const Contact = () => {
 
                       <div>
                         <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-3">
-                          Message *
+                          Message <span aria-hidden="true">*</span>
                         </label>
                         <textarea
                           id="message"
@@ -308,25 +312,34 @@ const Contact = () => {
                           value={formData.message}
                           onChange={handleInputChange}
                           required
+                          aria-required="true"
                           rows={5}
                           className="w-full px-6 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-vertical text-lg bg-white/80 backdrop-blur-sm hover:bg-white"
                           placeholder="Tell us about your requirements or questions..."
                         />
                       </div>
 
-                      {/* Web Captcha */}
+                      {/* Security Verification */}
                       <div>
                         <label htmlFor="captcha" className="block text-sm font-bold text-gray-700 mb-3">
-                          Security Verification *
+                          Security Verification <span aria-hidden="true">*</span>
                         </label>
+                        <p id="captcha-instructions" className="text-sm text-gray-500 mb-3">
+                          Type the characters shown in the box below. This helps us prevent spam.
+                        </p>
                         <div className="flex items-center gap-4 mb-4">
-                          <div className="bg-gradient-to-r from-gray-100 to-gray-200 px-6 py-4 rounded-xl border-2 border-dashed border-gray-300 font-mono text-2xl font-bold text-gray-700 tracking-widest select-none">
-                            {captchaValue}
+                          <div
+                            aria-label={`Security code: ${captchaValue.split('').join(' ')}`}
+                            className="bg-gradient-to-r from-gray-100 to-gray-200 px-6 py-4 rounded-xl border-2 border-dashed border-gray-300 font-mono text-2xl font-bold text-gray-700 tracking-widest select-none"
+                            role="img"
+                          >
+                            <span aria-hidden="true">{captchaValue}</span>
                           </div>
                           <button
                             type="button"
                             onClick={refreshCaptcha}
-                            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 font-semibold"
+                            aria-label="Generate a new security code"
+                            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2"
                           >
                             Refresh
                           </button>
@@ -338,24 +351,30 @@ const Contact = () => {
                           value={formData.captcha}
                           onChange={handleInputChange}
                           required
+                          aria-required="true"
+                          aria-describedby="captcha-instructions"
+                          aria-invalid={submitStatus === 'captcha_error'}
+                          autoComplete="off"
                           className="w-full px-6 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-lg bg-white/80 backdrop-blur-sm hover:bg-white"
-                          placeholder="Enter the characters above"
+                          placeholder="Enter the characters shown above"
                         />
                       </div>
 
                       <button
                         type="submit"
                         disabled={isSubmitting}
+                        aria-disabled={isSubmitting}
+                        aria-busy={isSubmitting}
                         className="w-full bg-gradient-to-r from-[#5680E9] to-[#84CEEB] text-white py-5 px-8 rounded-xl font-bold text-xl hover:from-[#4c6fd4] hover:to-[#7bb3e8] focus:ring-2 focus:ring-[#5680E9] focus:ring-offset-2 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-4"
                       >
                         {isSubmitting ? (
                           <>
-                            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
-                            Sending...
+                            <div aria-hidden="true" className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                            <span>Sending...</span>
                           </>
                         ) : (
                           <>
-                            <Send className="w-6 h-6" />
+                            <Send aria-hidden="true" className="w-6 h-6" />
                             Send Message
                           </>
                         )}
@@ -401,7 +420,7 @@ const Contact = () => {
                   <div className="relative z-10">
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
-                        <Building2 className="w-7 h-7 text-white" />
+                        <Building2 aria-hidden="true" className="w-7 h-7 text-white" />
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-gray-900">SINGAPORE</h3>
@@ -411,21 +430,21 @@ const Contact = () => {
                     
                     <div className="space-y-4">
                       <div className="flex items-start gap-3">
-                        <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                        <MapPin aria-hidden="true" className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                         <span className="text-gray-700 whitespace-pre-line">{offices[0].address}</span>
                       </div>
                       <div className="flex items-center gap-3">
-                        <Phone className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                        <Phone aria-hidden="true" className="w-5 h-5 text-blue-600 flex-shrink-0" />
                         <a href={`tel:${offices[0].phone}`} className="text-gray-700 hover:text-blue-600 transition-colors font-semibold">{offices[0].phone}</a>
                       </div>
                       <div className="flex items-center gap-3">
-                        <div className="w-5 h-4 flex items-center justify-center flex-shrink-0">
+                        <div aria-hidden="true" className="w-5 h-4 flex items-center justify-center flex-shrink-0">
                           <div className="w-4 h-3 border-2 border-blue-600 rounded-sm"></div>
                         </div>
-                        <span className="text-gray-700">{offices[0].fax}</span>
+                        <span className="text-gray-700"><span className="sr-only">Fax: </span>{offices[0].fax}</span>
                       </div>
                       <div className="flex items-center gap-3">
-                        <Mail className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                        <Mail aria-hidden="true" className="w-5 h-5 text-blue-600 flex-shrink-0" />
                         <a href={`mailto:${offices[0].email}`} className="text-gray-700 hover:text-blue-600 transition-colors font-semibold">{offices[0].email}</a>
                       </div>
                     </div>
@@ -435,7 +454,7 @@ const Contact = () => {
                 {/* Other Locations */}
                 <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg flex-1">
                   <h3 className="text-xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <div aria-hidden="true" className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
                       <MapPin className="w-4 h-4 text-white" />
                     </div>
                     Our Regional Offices
@@ -459,11 +478,11 @@ const Contact = () => {
                         <p className="text-sm text-gray-600 mb-4 whitespace-pre-line leading-relaxed">{office.address}</p>
                         <div className="flex flex-wrap gap-6 text-sm">
                           <a href={`tel:${office.phone}`} className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-2">
-                            <Phone className="w-4 h-4" />
+                            <Phone aria-hidden="true" className="w-4 h-4" />
                             {office.phone}
                           </a>
                           <a href={`mailto:${office.email}`} className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-2">
-                            <Mail className="w-4 h-4" />
+                            <Mail aria-hidden="true" className="w-4 h-4" />
                             Email
                           </a>
                         </div>

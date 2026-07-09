@@ -23,21 +23,40 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function AppContent() {
   const location = useLocation();
-  
-  // Add body class based on current route
+  const [announcement, setAnnouncement] = React.useState('');
+
   React.useEffect(() => {
     if (location.pathname === '/') {
       document.body.className = 'home-page';
     } else {
       document.body.className = '';
     }
+
+    // Announce route change to screen readers and move focus to main content
+    const main = document.getElementById('main-content');
+    if (main) {
+      main.setAttribute('tabindex', '-1');
+      main.focus({ preventScroll: true });
+    }
+
+    const pageTitle = document.title || 'Page';
+    setAnnouncement(`Navigated to ${pageTitle}`);
   }, [location.pathname]);
 
   return (
     <div className="min-h-screen">
+      {/* Screen reader live region for route change announcements */}
+      <div
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        className="sr-only"
+      >
+        {announcement}
+      </div>
       <SkipLink />
       <Header />
-      <main id="main-content" role="main">
+      <main id="main-content" role="main" tabIndex={-1} className="focus:outline-none">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/formation-singapore-entities" element={<FormationOfSingaporeEntities />} />

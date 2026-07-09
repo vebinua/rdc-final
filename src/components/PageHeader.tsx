@@ -53,16 +53,16 @@ const PageHeader: React.FC<PageHeaderProps> = ({
     >
       {/* Loading indicator */}
       {!imageLoaded && !imageError && (
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center z-5">
-          <div className="text-white text-lg">Loading...</div>
+        <div role="status" aria-label="Loading page" className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 flex items-center justify-center z-5">
+          <div aria-hidden="true" className="text-white text-lg">Loading...</div>
         </div>
       )}
       
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto mt-16">
         <div className="bg-gray-800 bg-opacity-40 backdrop-blur-sm rounded-2xl p-8 md:p-12">
           {icon && (
-            <div className="flex items-center justify-center gap-4 mb-6">
-              {React.cloneElement(icon as React.ReactElement, { 
+            <div aria-hidden="true" className="flex items-center justify-center gap-4 mb-6">
+              {React.cloneElement(icon as React.ReactElement, {
                 className: "w-16 h-16",
                 style: { color: titleColor }
               })}
