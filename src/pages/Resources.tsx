@@ -82,36 +82,36 @@ const Resources: React.FC = () => {
       </header>
 
       {/* Visual Separation Element */}
-      <div className="relative z-20">
+      <div aria-hidden="true" className="relative z-20">
         {/* Decorative separator with gradient and shadow */}
         <div className="h-4 bg-gradient-to-b from-black/20 via-transparent to-transparent"></div>
-        
+
         {/* Main separator bar with brand colors */}
         <div className="relative overflow-hidden">
           <div className="h-2 bg-gradient-to-r from-[#5680E9] via-[#5AB9EA] to-[#84CEEB] shadow-lg"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
         </div>
-        
+
         {/* Bottom shadow for depth */}
         <div className="h-6 bg-gradient-to-b from-[#C1C8E4]/10 to-transparent"></div>
       </div>
 
       {/* Content Section */}
-      <section 
-        className="py-20 relative" 
+      <section
+        className="py-20 relative"
         style={{ backgroundColor: '#C1C8E4' }}
         aria-label="Resources content"
       >
         {/* Subtle top border for additional separation */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-        
+        <div aria-hidden="true" className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="p-12 rounded-2xl shadow-lg" style={{ backgroundColor: 'rgba(128, 128, 128, 0.3)' }}>
+            <div className="p-12 rounded-2xl shadow-lg" style={{ backgroundColor: 'rgba(30, 41, 80, 0.85)' }}>
               <h2 className="text-3xl font-bold mb-6 font-sans text-white">
                 Resources Coming Soon
               </h2>
-              <p className="text-lg leading-relaxed font-body text-white">
+              <p className="text-lg leading-relaxed font-body text-white/90">
                 We're preparing a comprehensive collection of resources to help you navigate the complexities of business in Singapore and across Asia. Stay tuned for valuable insights, guides, and tools.
               </p>
             </div>
