@@ -166,13 +166,13 @@ const Footer: React.FC = () => {
                 </div>
                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-3 border border-gray-600/30 hover:bg-gray-700/50 transition-all duration-300">
   <a
-    href="https://thecorporatesg.com/"
+    href="http://corpsg.com/"
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="The Corporate SG — Associate Company (opens in new tab)"
+    aria-label="Corp SG — Associate Company (opens in new tab)"
     className="text-sm text-gray-300 hover:text-blue-400 transition-all duration-300 flex items-center gap-2 group font-body min-h-[44px] font-light"
   >
-    https://thecorporatesg.com/
+    http://corpsg.com/
     <ExternalLink aria-hidden="true" size={14} className="opacity-70 group-hover:opacity-100 transition-all duration-300" />
   </a>
 </div>
